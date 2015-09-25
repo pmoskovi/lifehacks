@@ -1,0 +1,26 @@
+Netgear ReadyNAS 102
+Bittorrent Sync
+
+$> ssh root@<your-IP-address>
+cd /apps/btsync/config
+
+"webui" :
+ {
+   "listen" : "0.0.0.0:7099",
+   "allow_empty_password" : false,
+   "directory_root" : "/",
+   "directory_root_policy" : "belowroot",
+. . .
+
+"webui" :
+ {
+   "listen" : "0.0.0.0:7099",
+   "login" : "admin",
+   "password" : "password",
+   "allow_empty_password" : false,
+   "directory_root" : "/",
+   "directory_root_policy" : "belowroot",
+. . .
+
+
+
